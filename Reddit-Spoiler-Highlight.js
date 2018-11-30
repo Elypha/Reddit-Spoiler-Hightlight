@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit Spoiler Hightlight
 // @namespace    https://github.com/Elypha/Reddit-Spoiler-Hightlight
-// @version      0.1
+// @version      0.2
 // @description  Hightlight the spoiler marked title with a much ugly color so you won't miss it.
 // @author       u/Elypha
 // @date         21/10/2018
@@ -25,11 +25,11 @@ window.addEventListener('scroll', async () => {
 })
 
 function spoiler_mark(){
-    var spoiler = document.querySelectorAll(".eqAAWj");
+    var spoiler = document.querySelectorAll(".dcVpQZ");
     var length = spoiler.length;
     var i;
     for(i=0;i<length;i++){
-        var spoiler_parents = document.querySelectorAll(".eqAAWj")[i].parentNode.parentNode;
+        var spoiler_parents = document.querySelectorAll(".dcVpQZ")[i].parentNode.parentNode.parentNode;
 
         //Background Color of the spoiler marked titles:
         spoiler_parents.style.backgroundColor="#fd63635c";
